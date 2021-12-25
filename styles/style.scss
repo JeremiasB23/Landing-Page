@@ -37,8 +37,8 @@ body{
 }
 
 .flexElement{
-    margin-left: 75px;
-    width: 600px;
+    margin-left: 200px;//Puedo probar poniendolo global en la izq y derecha para que todo quede alineado al centro como en el ejemplo
+    width: 1000px;
     height: 150px;
 }
 
@@ -48,13 +48,35 @@ body{
    width: auto;
 }
 
+.mainFlexHelper2{
+    display: flex;
+    flex-direction: row;
+}
+
 .flexElement3{
    margin: 30px;
    padding: 30px;
+   margin-left: 200px;
+   width: 500px;
 }
+.flexElement4{
+    margin: 30px;
+    padding: 30px;
+    margin-left: 200px;
+    width: 500px;
+    background-color: white;
+ }
+
+ .flexElement5{
+     display: flex;
+     justify-content: center;
+ }
+
 
 .fontTitle{
-    @include fontStyle(white, monospace, 48px);
+    //@include fontStyle(white, monospace, 80px); -> NO SË PORQUE NO FUNCIONA
+    font-size: 60px;
+    font-family: monospace;
     font-weight: bold;
 
 }
